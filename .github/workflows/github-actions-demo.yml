@@ -1,5 +1,8 @@
 name: GitHub actions demo
 on:
+  push:
+    paths-ignore:
+      - '.github/**'
   pull_request:
     branches:
       - main
