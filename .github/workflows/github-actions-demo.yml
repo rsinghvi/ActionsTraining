@@ -8,6 +8,10 @@ jobs:
 
     steps:
       - name: Output build
-        run: echo ${{ github.event_name }} 
+        run: |
+          echo ${{ github.event_name }}
+          echo ${{ github.ref_name }}
+          echo "Listing all files in the repository:"
+            ls -al
         
 
