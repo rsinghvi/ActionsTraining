@@ -1,0 +1,12 @@
+name: GitHub actions demo
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions: read-all
+
+steps:
+  - name: Output build
+    run: echo ${{  }} 
+
