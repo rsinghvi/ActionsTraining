@@ -6,7 +6,8 @@ jobs:
     runs-on: ubuntu-latest
     permissions: read-all
 
-steps:
-  - name: Output build
-    run: echo ${{  }} 
+    steps:
+      - name: Output build
+        run: echo ${{ github.event_name }} 
+        
 
